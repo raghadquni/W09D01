@@ -17,9 +17,11 @@ function Register() {
         try {
         const users = await axios.post(`${BASE_URL}/signup` , {
         email,
-        password
+        password,
+        role
     })
     console.log(users);
+    
 }catch (error) {
     console.log(error);
 
